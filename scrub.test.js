@@ -1,9 +1,9 @@
 const scrub = require('./scrub');
 const inputData = require('./inputData.json');
 
-describe('scrubbed data', async () => {
-    const scrubbedData = await scrub(inputData);
+const scrubbedData = scrub(inputData);
 
+describe('scrubbed data', () => {
     test('is the same length as input data', () => {
         expect(scrubbedData.length).toEqual(inputData.length);
     });
