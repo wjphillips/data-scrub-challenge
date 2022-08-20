@@ -34,8 +34,4 @@ function scrubEmail(emailAddress){
     return '******@' + emailAddress.split('@')[1];
 }
 
-function scrubString(){
-    return '******';
-}
-
 module.exports = scrub;
